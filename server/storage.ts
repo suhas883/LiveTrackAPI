@@ -57,7 +57,12 @@ export class DatabaseStorage implements IStorage {
   async updateTrackingRecord(id: string, record: Partial<InsertTrackingRecord>): Promise<TrackingRecord | undefined> {
     const [updated] = await db
       .update(trackingRecords)
-      .set({ ...record, updatedAt: new Date() })
+      .set({ 
+        ...record, 
+        // Force cast events to any to bypass TS2769 error
+        events: (record as any).events !== undefined ? (record as any).events as any : undefined,
+        updatedAt: new Date() 
+      })
       .where(eq(trackingRecords.id, id))
       .returning();
     return updated || undefined;
