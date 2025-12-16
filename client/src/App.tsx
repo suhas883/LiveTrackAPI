@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { useToast } from "@/hooks/use-toast";
-// import Header from './components/Header';  // Commented out - removed for build fix
+import Header from './components/Header';
 import Hero from './components/Hero';
 import TrackingResults from './components/TrackingResults';
 import AIPredictions from './components/AIPredictions';
@@ -77,7 +77,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      {/* Header was here - Removed for build fix */}
+      <Header />
       
       {!showResults && <Hero onTrack={handleTrack} />}
       
