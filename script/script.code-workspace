@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../server"
+		},
+		{
+			"path": "../shared"
+		},
+		{
+			"path": "../client"
+		},
+		{
+			"path": "../dist"
+		},
+		{
+			"path": "../api"
+		},
+		{
+			"path": "../.git"
+		},
+		{
+			"path": "../.local"
+		}
+	]
+}

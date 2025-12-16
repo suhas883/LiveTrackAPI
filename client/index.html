@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>LiveTrackings - Track Any Package Worldwide | 500+ Couriers | AI-Powered</title>
+    <meta name="title" content="LiveTrackings - Track Any Package Worldwide | 500+ Couriers | AI-Powered" />
+    <meta name="description" content="Track packages from 500+ couriers worldwide including DTDC, Delhivery, Blue Dart, FedEx, UPS, DHL & more. AI-powered delivery predictions, real-time tracking updates, and smart notifications." />
+    <meta name="keywords" content="package tracking, courier tracking, DTDC tracking, Delhivery tracking, Blue Dart tracking, FedEx tracking, UPS tracking, DHL tracking, India Post tracking, shipment tracking, parcel tracking, delivery tracking, AI tracking" />
+    <meta name="author" content="LiveTrackings" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://livetrackings.com" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://livetrackings.com/" />
+    <meta property="og:title" content="LiveTrackings - Track Any Package Worldwide | AI-Powered" />
+    <meta property="og:description" content="Track packages from 500+ couriers worldwide. AI-powered delivery predictions with DTDC, Delhivery, FedEx, UPS, DHL & more." />
+    <meta property="og:image" content="https://livetrackings.com/og-image.png" />
+    <meta property="og:site_name" content="LiveTrackings" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://livetrackings.com/" />
+    <meta property="twitter:title" content="LiveTrackings - Track Any Package Worldwide | AI-Powered" />
+    <meta property="twitter:description" content="Track packages from 500+ couriers worldwide. AI-powered delivery predictions with DTDC, Delhivery, FedEx, UPS, DHL & more." />
+    <meta property="twitter:image" content="https://livetrackings.com/og-image.png" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="LiveTrackings" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="LiveTrackings" />
+    <meta name="msapplication-TileColor" content="#2563eb" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://api.perplexity.ai">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "LiveTrackings",
+      "description": "AI-powered package tracking for 500+ couriers worldwide",
+      "url": "https://livetrackings.com",
+      "applicationCategory": "Utility",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Register Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('SW registered'))
+            .catch(err => console.log('SW registration failed'));
+        });
+      }
+    </script>
+  </body>
+</html>
