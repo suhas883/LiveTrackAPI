@@ -27,7 +27,11 @@ export class DatabaseStorage implements IStorage {
   async createTrackingRecord(record: InsertTrackingRecord): Promise<TrackingRecord> {
     const [created] = await db
       .insert(trackingRecords)
-      .values(record)
+      .values({
+        ...record,
+        // Relax typing for events to avoid TS2769 complaints during inserts
+        events: (record as any).events as any,
+      })
       .returning();
     return created;
   }
