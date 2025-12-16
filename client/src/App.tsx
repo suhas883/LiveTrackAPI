@@ -23,7 +23,7 @@ function Router() {
       <ProtectedRoute path="/" component={Dashboard} />
       <Route path="/auth" component={AuthPage} />
       
-      {/* ✅ RESTORED BLOG ROUTE */}
+          {/* ✅ RESTORED BLOG ROUTE - Live deployment */}
       <Route path="/blog" component={BlogPage} />
       
       <Route component={NotFound} />
