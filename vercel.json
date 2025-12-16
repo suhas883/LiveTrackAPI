@@ -1,7 +1,10 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/public",
   "installCommand": "npm install",
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/server/index.ts" },
+    { "source": "/api/track", "destination": "/api/track" },
+    { "source": "/api/history", "destination": "/api/history" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

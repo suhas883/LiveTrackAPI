@@ -7,25 +7,19 @@ export default function Header() {
     <header className="border-b bg-white sticky top-0 z-50">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/">
-          <a className="font-bold text-xl text-primary flex items-center gap-2">
-            📦 LiveTrackAPI
-          </a>
+        <Link href="/" className="font-bold text-xl text-primary flex items-center gap-2">
+          📦 LiveTrackAPI
         </Link>
         
         {/* Navigation */}
         <nav className="flex items-center gap-6">
-          <Link href="/">
-            <a className={`text-sm font-medium hover:text-primary transition-colors ${location === '/' ? 'text-primary' : 'text-gray-600'}`}>
-              Dashboard
-            </a>
+          <Link href="/" className={`text-sm font-medium hover:text-primary transition-colors ${location === '/' ? 'text-primary' : 'text-gray-600'}`}>
+            Dashboard
           </Link>
 
           {/* Blog Link */}
-          <Link href="/blog">
-            <a className={`text-sm font-medium hover:text-primary transition-colors ${location === '/blog' ? 'text-primary' : 'text-gray-600'}`}>
-              Blog
-            </a>
+          <Link href="/blog" className={`text-sm font-medium hover:text-primary transition-colors ${location === '/blog' ? 'text-primary' : 'text-gray-600'}`}>
+            Blog
           </Link>
 
           {/* Yendo Affiliate Link - HIGHLIGHTED */}
