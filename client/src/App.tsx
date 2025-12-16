@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { useToast } from "@/hooks/use-toast";
-import Header from './components/Header';
+// import Header from './components/Header';  // Commented out - removed for build fix
 import Hero from './components/Hero';
 import TrackingResults from './components/TrackingResults';
 import AIPredictions from './components/AIPredictions';
@@ -9,7 +9,7 @@ import SweepstakesBanner from './components/SweepstakesBanner';
 import YendoOffer from './components/YendoOffer';
 import Features from './components/Features';
 import Carriers from './components/Carriers';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';  // Commented out - removed for build fix
 import EmailModal from './components/EmailModal';
 import SmsModal from './components/SmsModal';
 import AIChat from './components/AIChat';
@@ -77,7 +77,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <Header />
+      {/* Header was here - Removed for build fix */}
       
       {!showResults && <Hero onTrack={handleTrack} />}
       
@@ -130,7 +130,7 @@ function App() {
       
       <Features />
       <Carriers />
-      <Footer />
+      {/* Footer was here - Removed for build fix */}
       
       <EmailModal
         isOpen={emailModalOpen}
